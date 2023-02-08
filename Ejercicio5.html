@@ -1,33 +1,44 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" data-bs-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <title>Document</title>
 </head>
-<body>
+<body class="container" style="margin-top: 20px;" data-bs-theme="dark">
     <header>
-        <h1>Este es el título principal del sitio web</h1>
+        <h1 class="main-title">Este es el título principal del sitio web</h1>
     </header>
-    <nav>
+    <nav class="main-menu">
         <ul>
-            <li><a href="">Inicio</a></li>
-            <li><a href="">Fotos</a></li>
-            <li><a href="">Videos</a></li>
-            <li><a href="">Contacto</a></li>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Fotos</a></li> 
+            <li><a href="#">Videos</a></li>
+            <li><a href="#">Contacto</a></li>
         </ul>
     </nav>
-    <section>
-        <h3>Título del artículo 1</h3>
+    <div class="content">
+    <article>
+        <header>
+            <h3>Título del artículo 1</h3>
+        </header>
         <p>Este es el texto del primer mensaje</p>
+    </article>
+    <footer>
         <p>Comentarios (0)</p>
-    </section>
-    <section>
-        <h3>Título del artículo 2</h3>
+    </footer>
+    <article>
+        <header>
+            <h3>Título del artículo 2</h3>
+        </header>
         <p>Este es el texto del segundo mensaje</p>
+    </article>
+    <footer>
         <p>Comentarios (0)</p>
-    </section>
-    <aside>
+    </footer>
+    </div>
+    <aside style="margin-left: 40px;">
         <p>Mensaje uno</p>
         <p>Mensaje dos</p>
     </aside>
