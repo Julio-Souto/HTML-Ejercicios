@@ -5,6 +5,21 @@ table, th, tr, td{
     border-collapse: collapse;
     caption-side: top;
 }
+caption{
+    caption-side: top;
+    text-align: center;
+}
+div.field > label{
+    width: 20%;
+    text-align: center;
+}
+div.field{
+    width: 60%;
+    text-align: center;
+}
+.container{
+    margin-top: 20px;
+}
 .table, .table th, .table tr, .table td {
     text-align: center;
     border: 1px solid gainsboro;
