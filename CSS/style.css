@@ -1,0 +1,34 @@
+table, th, tr, td{
+    text-align: center;
+    border: 1px solid gainsboro;
+    margin-bottom: 10px;
+    border-collapse: collapse;
+    caption-side: top;
+}
+.table, .table th, .table tr, .table td {
+    text-align: center;
+    border: 1px solid gainsboro;
+    margin-bottom: 10px;
+    border-collapse: collapse;
+    caption-side: top;
+}
+.btn{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-right: 15px;
+}
+.tabla, .tabla th, .tabla tr, .tabla td{
+    text-align: center;
+    border: 1px solid gainsboro;
+    margin-bottom: 10px;
+    border-collapse: collapse;
+    caption-side: top;
+}
+.cabecera{
+    background-color: gray;
+    border-bottom-width: 3px;
+    border-color: black;
+}
+.tercero{
+    background-color: gainsboro;
+}
