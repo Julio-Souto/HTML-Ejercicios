@@ -14,11 +14,9 @@ caption{
     margin: 10px 0 10px 0;
 }
 div.field > label{
-    width: 20%;
     text-align: center;
 }
 div.field{
-    width: 60%;
     text-align: center;
 }
 .container{
