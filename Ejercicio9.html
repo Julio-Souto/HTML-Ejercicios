@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="get">
+        <fieldset>
+            <legend>Laboral</legend>
+            <div>
+                <input type="checkbox" name="ajeno" id="ajeno">
+                <label for="ajeno">Por cuenta ajena</label>
+            </div>
+            <div>
+                <input type="checkbox" name="autonomo" id="autonomo">
+                <label for="autonomo">Autonomo</label>
+            </div>
+            <p>Alguna vez fuera de España?</p>
+            <div>
+                <input type="radio" name="fuera" id="fuera-si" value="si">
+                <label for="fuera-si">Si</label>
+                <select name="extranjero" id="extranjero">
+                    <option value="fuera-ue">Fuera de la UE</option>
+                    <option value="dentro-ue">Dentro de la UE</option>
+                </select>
+            </div>
+            <div>
+                <input type="radio" name="fuera" id="fuera-no" value="no">
+                <label for="fuera-no">No</label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Personal</legend>
+            <div>
+                <label for="nombre">Apellidos y nombre:</label>
+                <input type="text" name="nombre" id="nombre">
+            </div>
+            <p>Conocimientos sobre:</p>
+            <select name="conocimientos" id="conocimientos" size="4">
+                <option value="informatica">Informatica</option>
+                <option value="finanzas">Finanzas</option>
+                <option value="conduccion">Conduccion</option>
+                <option value="leyes">Leyes</option>
+            </select>
+        </fieldset>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>

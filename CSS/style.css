@@ -9,6 +9,10 @@ caption{
     caption-side: top;
     text-align: center;
 }
+.container fieldset{
+    padding: 10px;
+    margin: 10px 0 10px 0;
+}
 div.field > label{
     width: 20%;
     text-align: center;
