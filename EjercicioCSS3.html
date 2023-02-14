@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        .container{
+            outline: solid;
+        }
+        .item{
+            visibility: hidden;
+        }
+        .cuadrado{
+            width: 250px;
+            height: 250px;
+            margin: 1em auto;
+            background-color: red;
+        }
+        .circulo{
+            position: relative;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            width: 100px;
+            height: 100px;
+            background-color: black;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="cuadrado">
+        <div class="circulo"></div>
+    </div>
+    <div class="container">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus, ipsum quia iste, placeat cumque sequi quaerat aspernatur autem rem reiciendis beatae dolor dolores eius blanditiis consectetur fugit, cupiditate dolorum corrupti!
+        <div class="item">
+            Hello World
+        </div>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea odit illo totam, assumenda quam dolore officiis velit at obcaecati quibusdam reiciendis similique possimus repellat. Laboriosam exercitationem vitae cupiditate excepturi modi!
+    </div>
+</body>
+</html>

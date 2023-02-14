@@ -1,31 +1,90 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        .box{
+            width: 500px;
+            height: 500px;
+            text-align: center;
+            background-color: red;
+        }
+        .box-child{
+            width: 200px;
+            height: 200px;
+            margin: 20px;
+            display: inline-block;
+            background-color: aqua;
+        }
+        label{
+            display: block;
+            margin: 1em 0 1em 0;
+        }
+        input{
+            display: block;
+            margin: 1em 0 1em 0;
+        }
+        span{
+            display: block;
+            text-align: center;
+            margin: auto;
+            padding: 5px;
+        }
+        span.nombre{
+            background-color: gray;
+            color: white;
+            font-size: 28px;
+        }
+        span.descripcion{
+            text-align: justify;
+            font-style: italic;
+        }
+        span.mail{
+            background-color: gainsboro;
+        }
+        div.caja{
+            margin-left: auto;
+            margin-right: auto;
+            margin: 0 auto;
+            max-width: 300px;
+            box-shadow: 1px 2px 8px 0px;
+        }
+        .box-child + .box-child{
+            background-color: blue;
+        }
+        .box-child:hover{
+            background-color: green;
+        }
+        form{
+            margin-top: 2em;
+            margin-bottom: 2em;
+        }
+    </style>
 </head>
-<style>
-    .box{
-        width: 500px;
-        height: 500px;
-        text-align: center;
-        background-color: red;
-    }
-    .box-child{
-        width: 200px;
-        height: 200px;
-        margin: 20px;
-        display: inline-block;
-        background-color: blue;
-    }
-</style>
+
 <body>
     <div class="box">
         <div class="box-child"></div>
         <div class="box-child"></div>
         <div class="box-child"></div>
         <div class="box-child"></div>
+    </div>
+    <form action="procesar.php" method="post">
+        <label>Usuario</label>  
+        <input type="text" id="nombre" name="nombre" placeholder="Nombre de usuario">
+        <label>Contraseña</label>  
+        <input type="password" id="clave" name="clave" placeholder="Contraseña">  
+        <input type="submit" value="Enviar">  
+    </form>
+    <div class="caja">
+        <span class="nombre">Juan perez</span>
+        <span class="descripcion">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis provident obcaecati perspiciatis amet? In incidunt voluptate, pariatur maiores unde nesciunt.</span>
+        <span class="mail"> <a href="mailto:daw@example.es"> email:daw@example.es </a></span>
     </div>
 </body>
 </html>
