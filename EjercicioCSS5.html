@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            place-content: center;
+            height: 100vh;
+        }
+        .flex-grid{
+            width: 50vw;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(2,1fr);
+        }
+        div.flex-grid > div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 3em;
+            color: white;
+        }
+        .flex-grid > div:nth-child(even){
+            background-color: aqua;
+        }
+        .flex-grid > div:nth-child(odd){
+            background-color: tomato;
+        }
+    </style>
+</head>
+<body class="container">
+    <div class="flex-grid">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+    </div>
+</body>
+</html>
